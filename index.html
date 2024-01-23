@@ -1,143 +1,72 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+    <base target="_top">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB問診票</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <title>好きなジャンル登録</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
+
 <body>
 
     <form id="preferenceForm">
-    <h1>好きなジャンルを選択してください</h1>
-    <h2>チェックしたジャンルの映画情報をお届けします</h2>
-    <label><input type="checkbox" name="アニメ"> アニメ</label><br>
-    <label><input type="checkbox" name="ドラマ"> ドラマ</label><br>
-    <label><input type="checkbox" name="恋愛"> 恋愛</label><br>
-    <label><input type="checkbox" name="ホラー"> ホラー</label><br>
-    <label><input type="checkbox" name="アート・コンテンポラリー"> アート・コンテンポラリー</label><br>
-    <label><input type="checkbox" name="戦争"> 戦争</label><br>
-    <label><input type="checkbox" name="音楽"> 音楽</label><br>
-    <label><input type="checkbox" name="ミュージカル"> ミュージカル</label><br>
-    <label><input type="checkbox" name="スポーツ"> スポーツ</label><br>
-    <label><input type="checkbox" name="SF"> SF</label><br>
-    <label><input type="checkbox" name="青春"> 青春</label><br>
-    <label><input type="checkbox" name="コメディ"> コメディ</label><br>
-    <label><input type="checkbox" name="アクション"> アクション</label><br>
-    <label><input type="checkbox" name="アドベンチャー・冒険"> アドベンチャー・冒険</label><br>
-    <label><input type="checkbox" name="クライム"> クライム</label><br>
-    <label><input type="checkbox" name="ショートフィルム"> ショートフィルム・短編</label><br>
-    <label><input type="checkbox" name="ドキュメンタリー"> ドキュメンタリー</label><br>
-    <label><input type="checkbox" name="スリラー"> スリラー</label><br>
-    <label><input type="checkbox" name="サスペンス"> サスペンス</label><br>
-    <label><input type="checkbox" name="ファミリー"> ファミリー</label><br>
-    <label><input type="checkbox" name="ファンタジー"> ファンタジー</label><br>
-    <label><input type="checkbox" name="ミステリー"> ミステリー</label><br>
-    <label><input type="checkbox" name="ヤクザ・任侠"> ヤクザ・任侠</label><br>
-    <label><input type="checkbox" name="伝記"> 伝記</label><br>
-    <label><input type="checkbox" name="時代劇"> 時代劇</label><br>
-    <label><input type="checkbox" name="西部劇"> 西部劇</label><br>
-    <label><input type="checkbox" name="歴史"> 歴史</label><br>
-    <label><input type="checkbox" name="パニック"> パニック</label><br>
-    <label><input type="checkbox" name="オムニバス"> オムニバス</label><br>
-    <label><input type="checkbox" name="バイオレンス"> バイオレンス</label><br>
-    <label><input type="checkbox" name="ギャング・マフィア"> ギャング・マフィア</label><br>
-    <br>
-    <p> ↓↓↓ 登録はこちらを一度クリック</p>
-    <input type="button" value="登録" onclick="submitForm()">
-    <p>画面が変わるまでしばらくお待ちください</p>
-  </form>
+        <h1>好きなジャンルを選択してください</h1>
+        <h2>チェックしたジャンルの映画情報をお届けします</h2>
+        <label><input type="checkbox" name="アニメ"> アニメ</label><br>
+        <!-- Add other genre checkboxes here -->
 
-  <div id="thankYou" style="display: none;">
-            <div>
-                <div class="mb-4 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75"
-                        fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                    </svg>
-                </div>
-                <div class="text-center">
-                    <h1>Thank You !</h1>
-                    <p>よりよい映画ライフをお楽しみください </p>
-      
-                </div>
-  </div>
+        <br>
+        <p> ↓↓↓ 登録はこちらを一度クリック</p>
+        <input type="button" value="登録" onclick="submitForm()">
+        <p>画面が変わるまでしばらくお待ちください</p>
+    </form>
 
-  	
- 
+    <div id="thankYou" style="display: none;">
+        <div>
+            <div class="mb-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="text-success" width="75" height="75"
+                    fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                </svg>
+            </div>
+            <div class="text-center">
+                <h1>Thank You !</h1>
+                <p>よりよい映画ライフをお楽しみください </p>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    function submitForm() {
-      var form = document.getElementById('preferenceForm');
-      var thankYouDiv = document.getElementById('thankYou');
-      var preferences = {};
-
-      for (var i = 0; i < form.elements.length; i++) {
-        var element = form.elements[i];
-        if (element.type === 'checkbox') {
-          preferences[element.name] = element.checked ? 'Yes' : 'No';
-        }
-      }
-
-      google.script.run.withSuccessHandler(function () {
-        form.style.display = 'none';
-        thankYouDiv.style.display = 'block';
-      }).registerPreferences(preferences);
-    }
-  </script>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
+        function submitForm() {
+            var form = document.getElementById('preferenceForm');
+            var thankYouDiv = document.getElementById('thankYou');
+            var preferences = {};
 
-        $(document).ready(function () {
-            const liffId = "2003023972-oY62ZzBa";
-            initializeLiff(liffId);
-        })
+            for (var i = 0; i < form.elements.length; i++) {
+                var element = form.elements[i];
+                if (element.type === 'checkbox') {
+                    preferences[element.name] = element.checked ? 'Yes' : 'No';
+                }
+            }
 
-        function initializeLiff(liffId) {
-            liff.init({
-                liffId: liffId
-            }).then(() => {
-                initializeApp();
-            }).catch((err) => {
-                console.log('LIFF Initialization failed ', err);
-            });
+            // Assuming you have the necessary function registerPreferences in your server-side script
+            // google.script.run.withSuccessHandler(function () {
+            //     form.style.display = 'none';
+            //     thankYouDiv.style.display = 'block';
+            // }).registerPreferences(preferences);
+
+            // For now, we'll just hide the form and show the thankYouDiv
+            form.style.display = 'none';
+            thankYouDiv.style.display = 'block';
         }
-
-        function sendText(text) {
-            liff.sendMessages([{
-                'type': 'text',
-                'text': text
-            }]).then(function () {
-                liff.closeWindow();
-            }).catch(function (error) {
-                window.alert('Failed to send message ' + error);
-            });
-        }
-
-        const params = (new URL(document.location)).searchParams;
-        const key = params.get('key');
-
-        $(function () {
-            $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const bangou = $('input[name="bangou"]').val();
-                const shushoujou  = $('input[name="shushoujou"]').val();
-                const keika  = $('input[name="keika"]').val();
-                const hatunetu = $('input[name="hatunetu"]').val();
-                const msg = `${name}\n${bangou}\n${shushoujou}\n${keika}\n${hatunetu}`;
-                sendText(msg);
-                return false;
-            });
-        });
-
     </script>
-
 </body>
+
 </html>
